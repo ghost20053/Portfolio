@@ -707,6 +707,21 @@ li {
 }
 
 @media (max-width: 420px) {
+  .brand {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .brand-copy small {
+    font-size: 10px;
+  }
+
   .hero .actions {
     display: grid;
   }
