@@ -1,13 +1,13 @@
 /* Foundation */
 :root {
-  color-scheme: light;
-  --bg: #f7f8fa;
-  --panel: #ffffff;
-  --line: #d7dfe8;
-  --text: #172a43;
-  --muted: #526277;
-  --accent: #245cb2;
-  --warm: #795414;
+  color-scheme: dark;
+  --bg: #0b1220;
+  --panel: #142034;
+  --line: #2a3b51;
+  --text: #edf4fc;
+  --muted: #a9bacd;
+  --accent: #79d5ca;
+  --warm: #f4c785;
   --content-width: 1120px;
 }
 
@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: #163e7a;
+  color: #ffffff;
 }
 
 a:focus-visible,
@@ -73,7 +73,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #f7f8faf5;
+  background: #0b1220ef;
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
 }
@@ -108,7 +108,7 @@ nav a {
   place-items: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #a7bdda;
+  border: 1px solid #436a72;
   border-radius: 50%;
   color: var(--accent);
   font-size: 12px;
@@ -264,12 +264,12 @@ p strong {
 }
 
 .btn:hover {
-  background: #194789;
+  background: #a1e7de;
   color: var(--bg);
 }
 
 .btn.secondary {
-  border-color: #b5c2d2;
+  border-color: #2a3b51;
   background: transparent;
   color: var(--text);
 }
@@ -357,7 +357,7 @@ p strong {
   max-width: 100%;
   margin-bottom: 20px;
   padding: 4px 10px;
-  border: 1px solid #a7bdda;
+  border: 1px solid #436a72;
   border-radius: 4px;
   color: var(--accent);
   font-size: 11px;
@@ -366,7 +366,7 @@ p strong {
 
 .tag.progress {
   color: var(--warm);
-  border-color: #d7c393;
+  border-color: #705c38;
 }
 
 .meta {
@@ -384,9 +384,9 @@ p strong {
 .stack span {
   padding: 3px 8px;
   border-radius: 3px;
-  background: #f1f4f8;
+  background: #ffffff07;
   border: 1px solid var(--line);
-  color: #526277;
+  color: #a9bacd;
   font-size: 11px;
 }
 
@@ -457,9 +457,9 @@ li {
 #contact {
   margin: 32px 0 0;
   padding: 48px;
-  border: 1px solid #a7bdda;
+  border: 1px solid #436a72;
   border-radius: 8px;
-  background: #edf2f9;
+  background: #142034;
 }
 
 #contact p {
