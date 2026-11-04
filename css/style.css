@@ -76,6 +76,8 @@ button {
   background: #0e1828;
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
+  max-height: 80dvh;
+  overflow-y: auto;
 }
 
 nav {
@@ -585,6 +587,66 @@ li {
   align-items: center;
   min-height: 44px;
   margin-top: -12px;
+}
+
+/* Clearly labelled development media, never presented as gameplay evidence. */
+.media-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 200px;
+  aspect-ratio: 16 / 9;
+  margin: 6px 0 24px;
+  padding: 24px;
+  border: 1px dashed #58728b;
+  border-radius: 10px;
+  background: #111b2d;
+  color: var(--muted);
+  text-align: center;
+}
+
+.media-placeholder span {
+  color: var(--warm);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.media-placeholder strong {
+  color: var(--text);
+  font-size: clamp(18px, 2.2vw, 24px);
+  overflow-wrap: anywhere;
+}
+
+.media-placeholder small {
+  font-size: 13px;
+}
+
+.case-placeholder {
+  max-width: 780px;
+  margin: 0 auto 32px;
+}
+
+.draft-notice {
+  max-width: 780px;
+  margin: 32px auto;
+  padding: 24px;
+  border: 1px dashed #7d6540;
+  border-radius: 10px;
+  background: #211f20;
+}
+
+.draft-notice h2 {
+  color: var(--warm);
+  font-size: 23px;
+}
+
+.draft-notice ul {
+  margin-bottom: 0;
 }
 
 /* Project presentation */

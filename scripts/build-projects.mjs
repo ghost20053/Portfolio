@@ -1,10 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const projects = JSON.parse(fs.readFileSync(path.join(root, 'data/projects.json'), 'utf8'));
-const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+let homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+for (const asset of ['css/style.css', 'js/navigation.js']) {
+  const version = createHash('sha256').update(fs.readFileSync(path.join(root, asset)))
+    .digest('hex').slice(0, 10);
+  const oldReference = new RegExp(asset.replaceAll('.', '\\.') + '(?:\\?v=[^"\\s]+)?');
+  homepage = homepage.replace(oldReference, `${asset}?v=${version}`);
+}
+fs.writeFileSync(path.join(root, 'index.html'), homepage);
 const escape = (text) => String(text).replace(/[&<>"']/g, (character) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
 })[character]);
@@ -35,7 +43,19 @@ ${project.resources.map((link) => `          <li><a href="${escape(link.url)}" t
               alt="${escape(project.imageAlt)}">
           </a>
           <figcaption>Original Honours prototype demonstration. Select the image to view it full size.</figcaption>
-        </figure>\n` : '';
+        </figure>\n` : `        <div class="media-placeholder case-placeholder" role="img"
+          aria-label="Development placeholder: ${escape(project.title)} gameplay image pending">
+          <span>Development placeholder</span>
+          <strong>${escape(project.title)} gameplay</strong>
+          <small>Real project screenshot or video to be added</small>
+        </div>\n`;
+  const pending = project.pending?.length ? `      <aside class="draft-notice">
+        <h2>Case-study details to add</h2>
+        <p>Development placeholder — this section is being prepared for the portfolio.</p>
+        <ul>
+${project.pending.map((text) => `          <li>${escape(text)}</li>`).join('\n')}
+        </ul>
+      </aside>\n\n` : '';
   const related = projects.filter((entry) => entry.slug !== project.slug).map((entry) =>
     `          <a class="btn secondary" href="${entry.slug}.html">${escape(entry.title)} →</a>`).join('\n');
   fs.writeFileSync(path.join(root, 'projects', `${project.slug}.html`), `<!DOCTYPE html>
@@ -69,7 +89,7 @@ ${image}      </section>
 
 ${sections}
 
-${resources}      <section class="case-section related-projects">
+${resources}${pending}      <section class="case-section related-projects">
         <h2>More projects</h2>
         <div class="actions">
 ${related}

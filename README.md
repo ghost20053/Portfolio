@@ -13,7 +13,7 @@ development work is on `Experiment`; review before merging or publishing.
 - Keep the generated HTML in Git so hosting does not require Node.
 
 The project pages reuse the homepage header and versioned CSS/JavaScript links.
-After changing an asset version in the homepage, regenerate the project pages.
+The build refreshes CSS/JavaScript cache versions automatically on every page.
 
 ## Confirmed attribution and scope
 
@@ -52,3 +52,11 @@ Before expanding the next iteration:
 Do not insert fabricated screenshots, unconfirmed results, placeholder downloads,
 or a private repository link into public-facing pages. Existing external project
 resources remain available; this iteration does not build or upload games.
+
+## Development placeholders
+
+The user authorised clearly marked placeholders on Experiment. Media placeholders
+and draft notices identify missing screenshots and case-study detail. Resolve them
+before publishing. Run `node scripts/check-site.mjs --release` before merging;
+it intentionally fails while placeholders remain. EyeForEye is a single draft
+entry covering the former Darkpine project.

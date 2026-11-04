@@ -34,6 +34,48 @@
         "label": "Original project portfolio",
         "url": "https://sites.google.com/view/practice-resume1/home"
       }
+    ],
+    "pending": [
+      "Gameplay screenshots and a short demonstration.",
+      "Specific design decisions, iteration examples and lessons learned.",
+      "Development dates, credits and playable build availability."
+    ]
+  },
+  {
+    "slug": "pigeon-city",
+    "title": "Pigeon City",
+    "category": "Group project · Unity",
+    "summary": "A platforming game about a pigeon finding its way home by jumping and climbing through the city while avoiding predators.",
+    "status": "Released game",
+    "facts": {
+      "Engine": "Unity",
+      "Project type": "Group project",
+      "My contributions": "Programming and level design"
+    },
+    "sections": [
+      {
+        "title": "Project overview",
+        "paragraphs": [
+          "Pigeon City follows a pigeon that cannot fly back to its nest. Players navigate the city by jumping and climbing, avoiding predators on the way home."
+        ]
+      },
+      {
+        "title": "My contribution",
+        "paragraphs": [
+          "I contributed programming and level design as part of the group project."
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "label": "View the game and download on itch.io",
+        "url": "https://krystallos-aurora.itch.io/pigeon-city"
+      }
+    ],
+    "pending": [
+      "Gameplay screenshots and a short demonstration.",
+      "Specific programming responsibilities and examples of levels I worked on.",
+      "Team credits, development dates and a reflection on iteration."
     ]
   },
   {
@@ -73,7 +115,12 @@
         ]
       }
     ],
-    "resources": []
+    "resources": [],
+    "pending": [
+      "Gameplay screenshots and a short demonstration.",
+      "Specific design decisions, iteration examples and lessons learned.",
+      "Development dates, credits and playable build availability."
+    ]
   },
   {
     "slug": "honours-research",
@@ -128,6 +175,32 @@
         "label": "Browse the research evidence",
         "url": "https://ghost20053.github.io/PV-Correspondence-Toolkit/evidence.html#archive"
       }
+    ]
+  },
+  {
+    "slug": "eye-for-eye",
+    "title": "EyeForEye",
+    "category": "Group project",
+    "summary": "A group project originally developed under the name Darkpine. The repository was recreated when the project was renamed EyeForEye.",
+    "status": "Case study in preparation",
+    "facts": {
+      "Project type": "Group project",
+      "Final title": "EyeForEye",
+      "Earlier title": "Darkpine"
+    },
+    "sections": [
+      {
+        "title": "Project history",
+        "paragraphs": [
+          "Darkpine and EyeForEye refer to the same project. EyeForEye is the final name; the earlier repository records its development before the rename."
+        ]
+      }
+    ],
+    "resources": [],
+    "pending": [
+      "Project overview, genre and development status.",
+      "My specific responsibilities, team credits and technologies used.",
+      "Gameplay screenshots, demonstration and any public release link."
     ]
   }
 ]
