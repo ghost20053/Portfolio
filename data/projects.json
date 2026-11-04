@@ -1,0 +1,133 @@
+[
+  {
+    "slug": "maze-escape",
+    "title": "Maze Escape",
+    "category": "Gameplay systems · Unreal Engine",
+    "summary": "A third-person maze escape prototype exploring enemy pursuit, line-of-sight and the player's ability to evade AI guards.",
+    "status": "Completed prototype",
+    "facts": {
+      "Engine": "Unreal Engine 5",
+      "Focus": "AI behaviour trees, gameplay logic and level design",
+      "Format": "Third-person prototype"
+    },
+    "sections": [
+      {
+        "title": "Design objective",
+        "paragraphs": [
+          "Build an escape experience around navigating a maze while avoiding AI guards. The core interaction connects spatial navigation with the pressure of being detected and pursued."
+        ]
+      },
+      {
+        "title": "Gameplay systems",
+        "paragraphs": [
+          "The prototype experiments with Unreal Engine behaviour trees, enemy line-of-sight and pursuit. A stamina constraint limits the player's ability to evade enemies, bringing movement decisions into the escape loop."
+        ],
+        "points": [
+          "Enemy behaviour: detecting and pursuing the player.",
+          "Player movement: stamina as a constraint on evasion.",
+          "Level design: a maze as the setting for navigation and escape."
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "label": "Original project portfolio",
+        "url": "https://sites.google.com/view/practice-resume1/home"
+      }
+    ]
+  },
+  {
+    "slug": "office-game",
+    "title": "2D Office Game",
+    "category": "Gameplay systems · Unity",
+    "summary": "A top-down office prototype connecting dialogue, work-themed minigames, character interactions and combat.",
+    "status": "Vertical slice in development",
+    "facts": {
+      "Engine": "Unity 2022 · C#",
+      "My contributions": "Programming and level design",
+      "Format": "2D gameplay prototype",
+      "Project type": "Group project"
+    },
+    "sections": [
+      {
+        "title": "Project overview",
+        "paragraphs": [
+          "A group project bringing together office interactions and gameplay systems in a top-down setting. My contributions focus on programming and level design."
+        ]
+      },
+      {
+        "title": "Systems in the prototype",
+        "paragraphs": [
+          "The project includes printer and email-sorting minigames, dialogue, character switching, interactions, combat and a day/night transition. These systems connect individual activities within a shared game environment."
+        ],
+        "points": [
+          "Work-themed minigames provide distinct interaction tasks.",
+          "Dialogue and job progression connect tasks with character interactions.",
+          "Combat, player health and interface systems support encounter feedback."
+        ]
+      },
+      {
+        "title": "Development status",
+        "paragraphs": [
+          "This is an ongoing vertical slice. The systems described here are part of the developing prototype; it is not presented as a finished release."
+        ]
+      }
+    ],
+    "resources": []
+  },
+  {
+    "slug": "honours-research",
+    "title": "Physical–Virtual Interaction",
+    "category": "Interaction design · Honours research",
+    "summary": "Practice-led research into aligning physical objects with virtual representations for interaction in VR.",
+    "status": "Research submitted · Awaiting assessment",
+    "image": "honours-demonstration.jpg",
+    "imageAlt": "Physical tabletop setup and the corresponding headset view from the Honours demonstration.",
+    "facts": {
+      "Technology": "Unreal Engine · Meta Quest 3 · Hand tracking",
+      "Focus": "Interaction design, calibration and reflective development",
+      "Outcome": "Research artefact, development journal and developer toolkit"
+    },
+    "sections": [
+      {
+        "title": "Design question",
+        "paragraphs": [
+          "What design considerations emerge when aligning physical objects with virtual representations for interaction in VR?",
+          "The prototype pairs a virtual tabletop scene with physical objects, including a table, cubes and a chest. The original research uses untracked physical props and a controlled starting arrangement."
+        ]
+      },
+      {
+        "title": "Calibration and onboarding",
+        "paragraphs": [
+          "Early virtual hand targets could trigger calibration while asking the user to reach away from the real tabletop. The later approach used a two-hand tabletop interaction to connect the starting position with physical contact.",
+          "This iteration treated calibration and onboarding as one design problem: the instructions, the physical setup and the system's success condition needed to describe the same action."
+        ]
+      },
+      {
+        "title": "Evidence and reflection",
+        "paragraphs": [
+          "Three Action Research cycles documented experiments, technical constraints and design revisions. The supporting toolkit translates those observations into reflective questions about intended action, physical counterparts, correspondence, system knowledge, starting arrangements and onboarding.",
+          "These are practice-derived findings from documented development, not independently validated claims about usability or tracking accuracy. Later QR-tracking experiments are a separate extension of this research."
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "label": "Watch the narrated demonstration",
+        "url": "https://youtu.be/ANQCv5A1SBs"
+      },
+      {
+        "label": "Explore the Honours toolkit",
+        "url": "https://ghost20053.github.io/PV-Correspondence-Toolkit/"
+      },
+      {
+        "label": "Windows prototype and setup requirements",
+        "url": "https://ghost20053.github.io/PV-Correspondence-Toolkit/prototype.html#download"
+      },
+      {
+        "label": "Browse the research evidence",
+        "url": "https://ghost20053.github.io/PV-Correspondence-Toolkit/evidence.html#archive"
+      }
+    ]
+  }
+]

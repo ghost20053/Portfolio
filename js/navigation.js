@@ -17,7 +17,18 @@ menuButton.addEventListener('click', () => {
 });
 
 navigation.addEventListener('click', (event) => {
-  if (event.target.closest('a')) closeMenu();
+  const link = event.target.closest('a');
+  if (!link) return;
+  closeMenu();
+
+  // Move keyboard focus out of the menu before it becomes hidden on mobile.
+  if (link.getAttribute('href').startsWith('#')) {
+    const target = document.querySelector(link.hash);
+    if (target) {
+      target.setAttribute('tabindex', '-1');
+      target.focus({ preventScroll: true });
+    }
+  }
 });
 
 document.addEventListener('keydown', (event) => {
@@ -30,7 +41,8 @@ document.addEventListener('keydown', (event) => {
 mobileViewport.addEventListener('change', closeMenu);
 
 // Highlight the section currently being read, as in the toolkit navigation.
-const sectionLinks = Array.from(navigation.querySelectorAll('a[href^="#"]'));
+const sectionLinks = Array.from(navigation.querySelectorAll('a[href^="#"]'))
+  .filter((link) => document.querySelector(link.hash));
 const pageSections = sectionLinks.map((link) => document.querySelector(link.hash));
 let updateScheduled = false;
 
