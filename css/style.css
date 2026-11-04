@@ -1,13 +1,13 @@
 /* Foundation */
 :root {
   color-scheme: dark;
-  --bg: #101923;
-  --panel: #17232f;
-  --line: #33424e;
-  --text: #f0f2ed;
-  --muted: #b0bdc6;
-  --accent: #b9e2d0;
-  --warm: #edc98f;
+  --bg: #0b1220;
+  --panel: #142034;
+  --line: #2a3b51;
+  --text: #edf4fc;
+  --muted: #a9bacd;
+  --accent: #79d5ca;
+  --warm: #f4c785;
   --content-width: 1120px;
 }
 
@@ -73,7 +73,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #101923f5;
+  background: #0b1220ef;
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
 }
@@ -108,7 +108,7 @@ nav a {
   place-items: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #6e8b83;
+  border: 1px solid #436a72;
   border-radius: 50%;
   color: var(--accent);
   font-size: 12px;
@@ -231,7 +231,7 @@ p strong {
 
 .hero-location span {
   margin: 0 10px;
-  color: #6e8b83;
+  color: #436a72;
 }
 
 .lead {
@@ -264,12 +264,12 @@ p strong {
 }
 
 .btn:hover {
-  background: #d6f0e4;
+  background: #a1e7de;
   color: var(--bg);
 }
 
 .btn.secondary {
-  border-color: #63767c;
+  border-color: #2a3b51;
   background: transparent;
   color: var(--text);
 }
@@ -341,7 +341,7 @@ p strong {
   grid-column: 1 / -1;
   padding: 38px;
   border-left: 3px solid var(--accent);
-  background: linear-gradient(115deg, #213630, var(--panel) 75%);
+  background: var(--panel);
 }
 
 #completed .card:first-child h3 {
@@ -357,7 +357,7 @@ p strong {
   max-width: 100%;
   margin-bottom: 20px;
   padding: 4px 10px;
-  border: 1px solid #54776a;
+  border: 1px solid #436a72;
   border-radius: 4px;
   color: var(--accent);
   font-size: 11px;
@@ -366,7 +366,7 @@ p strong {
 
 .tag.progress {
   color: var(--warm);
-  border-color: #756747;
+  border-color: #705c38;
 }
 
 .meta {
@@ -386,7 +386,7 @@ p strong {
   border-radius: 3px;
   background: #ffffff07;
   border: 1px solid var(--line);
-  color: #c6d1d7;
+  color: #c6d4e3;
   font-size: 11px;
 }
 
@@ -457,9 +457,9 @@ li {
 #contact {
   margin: 32px 0 0;
   padding: 48px;
-  border: 1px solid #4f6d63;
+  border: 1px solid #436a72;
   border-radius: 8px;
-  background: #1b2e2a;
+  background: #142034;
 }
 
 #contact p {
