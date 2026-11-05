@@ -2,13 +2,14 @@
   {
     "slug": "maze-escape",
     "title": "Maze Escape",
-    "category": "Gameplay systems · Unreal Engine",
+    "category": "Individual assignment · Unreal Engine",
     "summary": "A third-person maze escape prototype exploring enemy pursuit, line-of-sight and the player's ability to evade AI guards.",
     "status": "Completed prototype",
     "facts": {
       "Engine": "Unreal Engine 5",
       "Focus": "AI behaviour trees, gameplay logic and level design",
-      "Format": "Third-person prototype"
+      "Format": "Third-person prototype",
+      "Project type": "Individual assignment"
     },
     "sections": [
       {

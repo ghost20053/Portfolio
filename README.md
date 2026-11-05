@@ -27,6 +27,7 @@ The build refreshes CSS/JavaScript cache versions automatically on every page.
 - EyeForEye is the final name of the group project previously called Darkpine.
   The repository was recreated when the name changed; treat Darkpine as historical
   development evidence, not a separate project. Specific contributions still need confirmation.
+- Maze Escape is an individual assignment, separate from the game-jam projects.
 - Project Butterfly is a brief Unity NPC-AI experiment in progress.
 - Honours research is submitted and awaiting assessment.
 - Dark Matter stays excluded.
@@ -45,7 +46,7 @@ Before expanding the next iteration:
 - Obtain gameplay screenshots/video for Maze Escape, Office Game and Pigeon City.
 - Confirm team sizes, dates and feature-level contributions for group projects.
 - Confirm the role and gameplay evidence for EyeForEye, including its earlier Darkpine repository.
-- Confirm whether Maze Escape corresponds to the `24HourGameJam` repository.
+- Identify the correct Maze Escape assignment repository; do not link it to `24HourGameJam`.
 - Add reflections and playtest outcomes only when supported by the user's evidence.
 - Check rendered desktop/mobile layouts, keyboard navigation and zoom before merge.
 
