@@ -1,5 +1,37 @@
 [
   {
+    "slug": "peddle-radio",
+    "title": "Peddle Radio",
+    "category": "Team Misfits · 48-hour game jam",
+    "summary": "A team-developed prototype about a 1940s radio dispatcher helping rural callers through a digital radio interface and a companion guide booklet.",
+    "status": "Game jam prototype",
+    "facts": {
+      "Team": "Team Misfits",
+      "Project type": "48-hour game jam",
+      "Platform": "Windows",
+      "Players": "Solo or two-player cooperative play"
+    },
+    "sections": [
+      {
+        "title": "Project overview",
+        "paragraphs": [
+          "Players use the radio interface and guide booklet together to navigate conversations and make triage decisions. In cooperative play, one player operates the app while the other consults the booklet.",
+          "The itch.io download includes the playable build and manual."
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "label": "View the game and download on itch.io",
+        "url": "https://ghostrider20053.itch.io/pedel-radio"
+      }
+    ],
+    "pending": [
+      "My specific responsibilities and contributions.",
+      "Gameplay screenshots and development reflections."
+    ]
+  },
+  {
     "slug": "maze-escape",
     "title": "Maze Escape",
     "category": "Individual assignment · Unreal Engine",
